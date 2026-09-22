@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="NOVA — a modern shopping destination for fashion, beauty, home, footwear, accessories and technology."
+    >
+
+    <title>NOVA — Modern Essentials</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container nav">
+
+        <a href="#home" class="logo">
+            NOVA
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#shop" class="nav-link">Shop</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button
+                class="icon-btn"
+                id="searchToggle"
+                aria-label="Open search"
+            >
+                <span>⌕</span>
+            </button>
+
+            <button
+                class="cart-btn"
+                id="cartToggle"
+                aria-label="Open shopping bag"
+            >
+                Bag
+                <span id="cartCount">0</span>
+            </button>
+
+            <button
+                class="menu-btn"
+                id="menuToggle"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- SEARCH PANEL -->
+
+    <div class="search-panel" id="searchPanel">
+
+        <div class="container search-inner">
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search products..."
+                autocomplete="off"
+            >
+
+            <button id="searchClose">
+                ✕
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- MOBILE NAV -->
+
+    <div class="mobile-nav" id="mobileNav">
+
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                THE NOVA COLLECTION
+            </p>
+
+            <h1>
+                Everyday things,
+                <span>beautifully chosen.</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover fashion, beauty, home essentials,
+                footwear, accessories and technology —
+                all in one carefully curated place.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#shop" class="btn btn-dark">
+                    Shop now
+                </a>
+
+                <a href="#about" class="btn btn-outline">
+                    Discover NOVA
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div>
+                    <strong>50+</strong>
+                    <span>Products</span>
+                </div>
+
+                <div>
+                    <strong>6</strong>
+                    <span>Categories</span>
+                </div>
+
+                <div>
+                    <strong>24/7</strong>
+                    <span>Shopping</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-visual">
+
+            <div class="hero-card hero-card-main">
+
+                <img
+                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=85"
+                    alt="NOVA fashion collection"
+                >
+
+                <div class="hero-card-label">
+                    <span>01</span>
+                    <strong>New Season</strong>
+                </div>
+
+            </div>
+
+            <div class="hero-floating">
+                Curated
+                <br>
+                essentials
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="eyebrow">EXPLORE</p>
+                <h2>Shop by category</h2>
+            </div>
+
+            <a href="#shop" class="text-link">
+                View all →
+            </a>
+
+        </div>
+
+        <div class="category-grid">
+
+            <button
+                class="category-card"
+                data-category="Clothing"
+            >
+                <span>01</span>
+                <h3>Clothing</h3>
+                <p>Everyday styles</p>
+            </button>
+
+            <button
+                class="category-card"
+                data-category="Makeup"
+            >
+                <span>02</span>
+                <h3>Makeup</h3>
+                <p>Beauty essentials</p>
+            </button>
+
+            <button
+                class="category-card"
+                data-category="Home"
+            >
+                <span>03</span>
+                <h3>Home</h3>
+                <p>Modern living</p>
+            </button>
+
+            <button
+                class="category-card"
+                data-category="Footwear"
+            >
+                <span>04</span>
+                <h3>Footwear</h3>
+                <p>Step into comfort</p>
+            </button>
+
+            <button
+                class="category-card"
+                data-category="Accessories"
+            >
+                <span>05</span>
+                <h3>Accessories</h3>
+                <p>Small details</p>
+            </button>
+
+            <button
+                class="category-card"
+                data-category="Tech"
+            >
+                <span>06</span>
+                <h3>Tech</h3>
+                <p>Smart essentials</p>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SHOP ================= -->
+
+<section class="shop-section" id="shop">
+
+    <div class="container">
+
+        <div class="section-heading shop-heading">
+
+            <div>
+                <p class="eyebrow">THE COLLECTION</p>
+
+                <h2>
+                    Find something
+                    <span>you'll love.</span>
+                </h2>
+            </div>
+
+            <p class="section-description">
+                Browse our complete collection of
+                carefully selected everyday products.
+            </p>
+
+        </div>
+
+
+        <!-- FILTERS -->
+
+        <div class="shop-controls">
+
+            <div class="filters">
+
+                <button
+                    class="filter-btn active"
+                    data-filter="All"
+                >
+                    All
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="Clothing"
+                >
+                    Clothing
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="Makeup"
+                >
+                    Makeup
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="Home"
+                >
+                    Home
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="Footwear"
+                >
+                    Footwear
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="Accessories"
+                >
+                    Accessories
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="Tech"
+                >
+                    Tech
+                </button>
+
+            </div>
+
+            <select id="sortSelect" class="sort-select">
+
+                <option value="default">
+                    Sort by
+                </option>
+
+                <option value="low">
+                    Price: Low to High
+                </option>
+
+                <option value="high">
+                    Price: High to Low
+                </option>
+
+                <option value="az">
+                    Name: A to Z
+                </option>
+
+                <option value="za">
+                    Name: Z to A
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- PRODUCT GRID -->
+
+        <div
+            class="product-grid"
+            id="productGrid"
+        ></div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROMO ================= -->
+
+<section class="promo-section">
+
+    <div class="container promo">
+
+        <div>
+
+            <p class="eyebrow">
+                NOVA PICKS
+            </p>
+
+            <h2>
+                Less searching.
+                <br>
+                More discovering.
+            </h2>
+
+        </div>
+
+        <a href="#shop" class="btn btn-light">
+            Explore collection
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=85"
+                alt="Modern NOVA lifestyle"
+            >
+
+        </div>
+
+        <div class="about-content">
+
+            <p class="eyebrow">
+                ABOUT NOVA
+            </p>
+
+            <h2>
+                A simpler way
+                <span>to shop.</span>
+            </h2>
+
+            <p>
+                NOVA is designed around one simple idea:
+                everyday products should be easy to discover,
+                enjoyable to explore and simple to buy.
+            </p>
+
+            <p>
+                From clothing and beauty to home essentials,
+                footwear, accessories and technology,
+                NOVA brings different parts of modern life
+                together in one clean shopping experience.
+            </p>
+
+            <div class="about-points">
+
+                <div>
+                    <strong>01</strong>
+                    <span>Curated products</span>
+                </div>
+
+                <div>
+                    <strong>02</strong>
+                    <span>Simple shopping</span>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <span>Modern experience</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="container">
+
+        <div class="contact-heading">
+
+            <p class="eyebrow">
+                GET IN TOUCH
+            </p>
+
+            <h2>
+                We'd love to
+                <span>hear from you.</span>
+            </h2>
+
+            <p>
+                Have a question about a product, an order,
+                or NOVA? Send us a message.
+            </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-details">
+
+                <div class="contact-card">
+
+                    <span class="contact-number">01</span>
+
+                    <div>
+                        <h3>Visit us</h3>
+                        <p>
+                            Mangaluru, Karnataka,
+                            India
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="contact-card">
+
+                    <span class="contact-number">02</span>
+
+                    <div>
+                        <h3>Call us</h3>
+                        <p>
+                            +91 98765 43210
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="contact-card">
+
+                    <span class="contact-number">03</span>
+
+                    <div>
+                        <h3>Email us</h3>
+                        <p>
+                            mrjeevitha96@gmail.com
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="contact-card">
+
+                    <span class="contact-number">04</span>
+
+                    <div>
+                        <h3>Opening hours</h3>
+                        <p>
+                            Monday – Saturday
+                            <br>
+                            9:00 AM – 7:00 PM
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form
+                class="contact-form"
+                id="contactForm"
+            >
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your name"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="How can we help?"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-dark submit-btn"
+                >
+                    Send message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= CART ================= -->
+
+<div
+    class="cart-overlay"
+    id="cartOverlay"
+></div>
+
+<aside
+    class="cart-drawer"
+    id="cartDrawer"
+>
+
+    <div class="cart-header">
+
+        <div>
+            <p class="eyebrow">YOUR BAG</p>
+            <h2>Shopping bag</h2>
+        </div>
+
+        <button
+            id="cartClose"
+            class="close-btn"
+            aria-label="Close cart"
+        >
+            ✕
+        </button>
+
+    </div>
+
+
+    <div
+        class="cart-items"
+        id="cartItems"
+    ></div>
+
+
+    <div class="empty-cart" id="emptyCart">
+
+        <div class="empty-icon">
+            ♡
+        </div>
+
+        <h3>
+            Your bag is empty
+        </h3>
+
+        <p>
+            Add something you love.
+        </p>
+
+        <button
+            class="btn btn-dark"
+            id="continueShopping"
+        >
+            Continue shopping
+        </button>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>Total</span>
+
+            <strong id="cartTotal">
+                ₹0
+            </strong>
+
+        </div>
+
+        <button
+            class="btn btn-dark checkout-btn"
+            id="checkoutBtn"
+        >
+            Checkout
+        </button>
+
+        <p class="cart-note">
+            Demo checkout — no real payment is processed.
+        </p>
+
+    </div>
+
+</aside>
+
+
+<!-- ================= TOAST ================= -->
+
+<div
+    class="toast"
+    id="toast"
+>
+    <span>✓</span>
+    <p id="toastMessage">
+        Added to bag
+    </p>
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="footer-logo">
+                    NOVA
+                </a>
+
+                <p>
+                    Everyday things,
+                    beautifully chosen.
+                </p>
+
+                <div class="socials">
+
+                    <a href="#" aria-label="Instagram">
+                        Instagram
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        Facebook
+                    </a>
+
+                    <a href="#" aria-label="Pinterest">
+                        Pinterest
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Explore</h3>
+
+                <a href="#home">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Shop</h3>
+
+                <a href="#shop">Clothing</a>
+                <a href="#shop">Makeup</a>
+                <a href="#shop">Home</a>
+                <a href="#shop">Footwear</a>
+                <a href="#shop">Accessories</a>
+                <a href="#shop">Tech</a>
+
+            </div>
+
+
+            <div class="footer-column footer-contact">
+
+                <h3>Contact</h3>
+
+                <p>
+                    Mangaluru, Karnataka
+                    <br>
+                    India
+                </p>
+
+                <p>
+                    +91 98765 43210
+                </p>
+
+                <p>
+                    hello@nova.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 NOVA. All rights reserved.
+            </p>
+
+            <p>
+                Designed for a better everyday.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
